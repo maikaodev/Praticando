@@ -1,0 +1,12 @@
+.btn {
+  padding: 8px 32px;
+  border-radius: 24px;
+}
+.btn.btn-laranja {
+  background: #ff6633;
+  color: #fff;
+  transition: all 0.25s;
+}
+.btn.btn-laranja:hover {
+  background: #ff531a;
+}
