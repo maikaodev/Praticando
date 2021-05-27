@@ -9,7 +9,7 @@ header nav ul {
 }
 header nav ul li a {
   margin: 0px 16px;
-  color: #3399cc;
+  color: $color-primaria;
   transition: all 0.25s;
 }
 header nav ul li:hover {
