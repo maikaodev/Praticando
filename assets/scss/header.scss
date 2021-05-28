@@ -1,17 +1,25 @@
-header section {
-  justify-content: space-between;
-  align-items: center;
-}
-header nav ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-header nav ul li a {
-  margin: 0px 16px;
-  color: $color-primaria;
-  transition: all 0.25s;
-}
-header nav ul li:hover {
-  transform: scale(1.25);
+header {
+  section {
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      li {
+        transition: all 0.25s;
+
+        a {
+          margin: 0px 16px;
+          color: $color-primaria;
+        }
+      }
+      & li:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
 }

@@ -1,12 +1,18 @@
+@mixin button-style($background) {
+  background: $background;
+  &:hover {
+    background: darken($background, 5%);
+  }
+}
 .btn {
   padding: 8px 32px;
   border-radius: $btn-radius;
-}
-.btn.btn-laranja {
-  background: $color-tercearia;
-  color: $color-branco;
-  transition: all 0.25s;
-}
-.btn.btn-laranja:hover {
-  background: #ff531a;
+  &.btn-laranja {
+    background: $color-tercearia;
+    color: $color-branco;
+    transition: all 0.5s;
+    &.btn-laranja:hover {
+      @include button-style(#ff531a);
+    }
+  }
 }

@@ -7,8 +7,12 @@
   .container {
     width: 850px;
   }
-  .sobre-web-design figcaption img {
-    width: 600px;
+  .sobre-web-design {
+    figcaption {
+      img {
+        width: 600px;
+      }
+    }
   }
 }
 @media (max-width: 915px) {
@@ -22,19 +26,29 @@
   .row {
     flex-direction: column;
   }
-  head nav {
-    margin: 30px 0;
+  head {
+    nav {
+      margin: 30px 0;
+    }
   }
-  .sobre-web-design article {
-    width: 100%;
+  .sobre-web-design {
+    article {
+      width: 100%;
+    }
   }
-  .sobre-web-design figcaption img {
-    width: 100%;
-    margin: 30px 0 0 0;
+  .sobre-web-design {
+    figcaption {
+      img {
+        width: 100%;
+        margin: 30px 0 0 0;
+      }
+    }
   }
-  footer .row {
-    flex-direction: row;
-    justify-content: center;
+  footer {
+    .row {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 }
 
@@ -47,17 +61,19 @@
   .container {
     width: 290px;
   }
-  header nav {
-    background: $color-branco;
-    width: 100%;
-    margin-top: 16px;
-    padding: 10px 0 20px;
-    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.15);
-  }
-  header nav ul {
-    flex-direction: column;
-  }
-  header nav ul li {
-    margin: 8px 0;
+  header {
+    nav {
+      background: $color-branco;
+      width: 100%;
+      margin-top: 16px;
+      padding: 10px 0 20px;
+      box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.15);
+      ul {
+        flex-direction: column;
+        li {
+          margin: 8px 0;
+        }
+      }
+    }
   }
 }
